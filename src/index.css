@@ -2,41 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* La Bottega di Lucca Design System - Tuscan Wine Tradition
+All colors MUST be HSL. Inspired by Tuscan countryside, wine cellars, and Mediterranean warmth.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Background & Text */
+    --background: 45 35% 96%; /* Warm cream */
+    --foreground: 25 15% 15%; /* Rich dark brown */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Cards & Surfaces */
+    --card: 45 45% 98%; /* Light warm cream */
+    --card-foreground: 25 15% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 45 45% 98%;
+    --popover-foreground: 25 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary Brand - Terra Cotta */
+    --primary: 18 65% 45%; /* Terra cotta */
+    --primary-foreground: 45 45% 98%;
+    --primary-glow: 18 75% 65%; /* Lighter terra cotta */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Olive Green */
+    --secondary: 75 25% 35%; /* Olive green */
+    --secondary-foreground: 45 45% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Wine Burgundy Accent */
+    --wine-burgundy: 350 45% 25%; /* Deep wine red */
+    --wine-burgundy-foreground: 45 45% 98%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Gold Accent */
+    --gold: 45 85% 60%; /* Warm gold */
+    --gold-foreground: 25 15% 15%;
+
+    /* Muted Tones */
+    --muted: 45 25% 90%; /* Light beige */
+    --muted-foreground: 25 15% 45%;
+
+    --accent: 75 25% 35%; /* Olive green accent */
+    --accent-foreground: 45 45% 98%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 45 45% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 45 20% 85%; /* Warm border */
+    --input: 45 20% 90%;
+    --ring: 18 65% 45%;
 
-    --radius: 0.5rem;
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-wine: linear-gradient(180deg, hsl(var(--wine-burgundy)), hsl(350 35% 35%));
+    --gradient-sunset: linear-gradient(135deg, hsl(var(--gold)), hsl(var(--primary)));
+    
+    /* Shadows */
+    --shadow-warm: 0 10px 30px -10px hsl(var(--primary) / 0.3);
+    --shadow-elegant: 0 20px 40px -15px hsl(var(--wine-burgundy) / 0.2);
+    
+    /* Typography */
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Inter', sans-serif;
+    
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
